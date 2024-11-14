@@ -1,0 +1,393 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* fixed text starts here */
+.fixed {
+    width: 90%;
+    position:absolute;
+    margin-left: 5%;
+    padding: 10px 20px;
+    z-index: 99;
+    bottom: 5%;
+    background: #FF5F38;
+    border: 2px solid #FF5F38;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns {
+    display: flex;
+    gap: 5px;
+}
+
+.btns h4 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.btns h4:first-child{
+    background: black;
+    color: #FF5F38;
+    font-weight: 300;
+}
+
+/* fixed text ends here */
+
+/* loader starts here */
+.loader {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.loader h3 {
+    font-size: 1.5vw;
+}
+/* loader ends here */
+
+/* page1 starts here */
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #dadada;
+    position: relative;
+}
+
+.cursor {
+    width: 7vw;
+    height: 7vw;
+    background: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.cursor h5 {
+    flex-shrink: 1.3vw;
+}
+
+.page1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.page1-content {
+    width: 100%;
+    height: 100vh;
+    /* background: #000; */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background: red; */
+    padding: 2vw 3vw;
+}
+
+nav h3 {
+    font-size: 1.4vw;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+nav h4 {
+    font-size: 1.4vw;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.page1-content h1 {
+    font-family: 'Outfit';
+    font-size: 20vw;
+    font-weight: 700;
+    line-height: 25vw;
+}
+
+.page1-content h1 span {
+    font-family: 'Outfit';
+    display: inline-block;
+}
+
+/* page1 ends here */
+
+/* page2 starts here */
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    /* background: #dadada; */
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+.page2-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+
+.page2-top h3 {
+    font-size: 1vw;
+    font-weight: 500;
+    width: 26%;
+}
+
+.page2-top h4 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.elem {
+    overflow: hidden;
+    text-align: center;
+}
+
+.elem h1 {
+    font-weight: 500;
+    font-size: 3.3vw;
+}
+
+/* page2 ends here */
+
+/* page3 starts here */
+
+.page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+
+.page3-top {
+    /* background: red; */
+    text-align: center;
+}
+
+.page3-top h4 {
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.page3-top h2 {
+    font-size: 3.2vw;
+    font-weight: 400;
+    line-height: 3.3vw;
+}
+
+.page3-top h4 span {
+    font-size: 0.7vw;
+    background: black;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 10px; 
+}
+
+.page3-elements {
+    margin-top: 8vw;
+    height: 75vh;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page3-elements .box {
+    height: 100%;
+    width: 32.5%;
+    /* background: blue; */
+    position: relative;
+}
+
+.page3-elements .box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page3-elements .box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 400ms linear;
+}
+
+.page3-elements .box:hover img {
+    opacity: 0;
+}
+/* page3 ends here */
+
+/* page4 starts here */
+
+.page4 { 
+    width: 100%;
+    height: 100vh;
+    padding: 4vw 0;
+    position: relative;
+}
+
+.page4 h1 {
+    font-size: 6vw;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    width: 96%;
+    margin-left: 2%;
+    /* background: red; */
+}
+
+.swiper {
+    height: 60vh;
+    width: 100%;
+    /* background: red; */
+    position: relative;
+    padding: 4vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.page4 h3 {
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: 500;
+    left: 40%;
+    top: 40%;
+    z-index: 99;
+}
+
+.swiper::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 400px;
+    object-fit: cover;
+}
+
+/*page4 ends here */
+
+/* footer starts here */
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    padding: 5vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; */
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-top h3, .footer h4 {
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 400ms linear;
+}
+
+.footer-top h3:hover, .footer h4:hover {
+    scale: 1.1;
+}
+
+.footer-top-2 {
+    display: flex;
+    gap: 2vw;
+}
+
+.footer-top-1,.footer-top-2 .part-2, .footer-top-2 .part-3 {
+    text-align: start;
+}
+
+.footer-top .footer-top-1 h3 {
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.footer-top button {
+    font-size: 1vw;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 400ms linear;
+    cursor: pointer;
+}
+
+.footer-top button:hover {
+    background: #eee;
+    color: black;
+}
+
+.footer h1 {
+    margin-top: 30px;
+    width: 100%;
+    /* background: red; */
+    font-family: 'Outfit';
+    font-size: 20vw;
+    font-weight: 700;
+    line-height: 25vw;
+    color: white;
+    z-index: -1;
+    line-height: 15vw;
+    padding-bottom: 3vw;
+}
+
+.footer h1 span {
+    font-family: 'Outfit';
+    display: inline-block;
+}
+
+/* footer ends here */
